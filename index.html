@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites of Quezon</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff7a18, #ffb347);
+            padding: 20px 40px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        header a {
+            background: white;
+            color: #ff7a18;
+            padding: 10px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            color: #ff7a18;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff7a18;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bites of Quezon</h1>
+    <a href="#contact">Order Now</a>
+</header>
+
+<!-- HERO -->
+ <section class="hero">
+    <img src="logo.png" alt="Bites of Quezon Logo">
+
+    <h2>Isang Kagat, Diretso sa Sarap ng Quezon 😋</h2>
+
+    <p>
+        Craving ka ba ng authentic na Lucban delicacies? 
+        Hindi mo na kailangang bumiyahe — kami na ang bahala!
+        Tikman ang paboritong Longganisa, Cheesecake, at Brownies 
+        na siguradong babalik-balikan mo.
+    </p>
+
+    <br>
+
+    <!-- 🔥 PRO TIP (Urgency + Trust) -->
+    <p style="font-weight: bold; color: #ff7a18;">
+        📍 Available for PasaBuy 
+        <!-- | Limited stocks daily! -->
+    </p>
+<!-- 
+    <br>
+
+    <a href="#contact" class="btn">🛒 Umorder Ngayon</a> -->
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>Bakit Bites of Quezon?</h2>
+
+    <p>
+        Sa Bites of Quezon, hindi lang basta pagkain ang hatid namin — 
+        kundi ang tunay na lasa at kultura ng Lucban, Quezon.
+    </p>
+
+    <br>
+
+    <p>
+        ✔ Direktang galing sa pinagkakatiwalaang local suppliers<br>
+        ✔ Sariwa, de-kalidad, at siguradong authentic<br>
+        ✔ Perfect pang handa, pasalubong, o pang sariling cravings
+    </p>
+
+    <br>
+
+    <p>
+        Mula sa garlicky at spicy na Longganisa hanggang sa creamy na Cheesecake 
+        at fudgy na Brownies — bawat produkto ay ginawa para magbigay saya 
+        sa bawat kagat.
+    </p>
+
+    <br>
+
+    <p>
+        💛 Tikman mo na, at maranasan ang sarap na galing Quezon — 
+        delivered diretso sa’yo.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+    <div class="card">
+        <img src="Longanisa.jpg" alt="Lucban Longganisa">
+        <h3>Lucban Longganisa</h3>
+        <p>Garlic & Spicy Flavor</p>
+        <p class="price">Regular - ₱150 | Big - ₱250</p>
+        <!-- <a href="#contact" class="btn">Order Now</a> -->
+    </div>
+
+    <div class="card">
+        <img src="Cheesecake.png" alt="Rodillas Cheesecake">
+        <h3>Rodillas Cheesecake</h3>
+        <p>Creamy and rich signature cheesecake</p>
+        <p class="price">₱160 per pack</p>
+        <!-- <a href="#contact" class="btn">Order Now</a> -->
+    </div>
+
+    <div class="card">
+        <img src="brownies.png" alt="Rodillas Brownies">
+        <h3>Rodillas Brownies</h3>
+        <p>Soft, fudgy, and chocolatey goodness</p>
+        <p class="price">₱170 per pack</p>
+        <!-- <a href="#contact" class="btn">Order Now</a> -->
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to place an order? Reach out to us!</p>
+
+    <!-- <p>📍 Location: Quezon, Philippines</p> -->
+    <p>📞 Viber: 0905-482-0517</p>
+     <p>📘 Facebook: 
+         <a href="https://www.facebook.com/profile.php?id=61583502569220" target="_blank">
+            Visit our page
+        </a> 
+        </p>
+        <p>
+        <a href="https://m.me/61583502569220?text=Hello%20Bites%20of%20Quezon!%20Gusto%20ko%20umorder%20ng%20products.%20Pwede%20po%20ba%20mag-inquire?" 
+   target="_blank" 
+   class="btn">
+   💬 Ask Question
+</a> 
+<a href="https://m.me/61583502569220?text=Hello%20Bites%20of%20Quezon!%0A%0AOrder%20Details:%0AName:%20%0AAddress:%20%0AProduct:%20%0AQuantity:%20%0APayment:%20COD%20/%20GCash" 
+   target="_blank" 
+   class="btn">
+    🛒 Order via Messenger
+</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Bites of Quezon | Made with ❤️ in the Philippines</p>
+</footer>
+
+</body>
+</html>
